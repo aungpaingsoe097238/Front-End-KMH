@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <!-- <h1 id="head" class="head-class" >Hello World</h1> -->
+
+    <input type="text" id="inputText" class="text-class" value="">
+    <button onclick="clickMe()" >click me</button>
+
+    <script>
+    // const element = document.querySelector(".head-class");
+    // const element1 = document.getElementById("head");
+    // const element2 = document.getElementsByClassName("head-class");
+    // console.log( inputText.getAttribute("id") )
+    // console.log( inputText.value )
+
+    const inputText = document.querySelector('#inputText');  
+
+    function clickMe(){
+        alert(inputText.value);
+    }
+
+    </script>
+    
+    <!-- <script src="./assets/js/function.js"></script> -->
+    <!-- <script src="./assets/js/object.js"></script> -->
+    <!-- <script src="./assets/js/array.js"></script> -->
+    <!-- <script src="./assets/js/conditional.js"></script> -->
+    <!-- <script src="./assets/js/looping.js"></script> -->
+
+</body>
+</html>

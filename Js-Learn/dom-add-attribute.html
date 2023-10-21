@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .btn{
+            background: salmon;
+            padding: 20px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+
+    <button id="element" class=" for-remove" onclick="removeClass()">Click Me</button>
+
+    <script>
+
+        let element = document.querySelector("#element");
+
+        element.classList.add("btn")
+        element.classList.remove("for-remove");
+        element.className = "new-class"; 
+        
+        element.setAttribute("type","button");
+        element.setAttribute("name","mgmg");
+
+        function removeClass(){
+            element.classList.toggle("adding-class")
+        }
+
+    </script>
+    
+</body>
+</html>
