@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button onclick="handleSaveLocal()" >Save Local</button>
+    <button onclick="handleGetLocal()">Get Local</button>
+
+    <script>
+        // localStorage.setItem("name","Aung Paing Soe");
+        // localStorage.setItem("key","San Kyi Tar");
+        // console.log(  localStorage.getItem('name') )
+        // console.log( localStorage.getItem("key") )
+        // localStorage.removeItem("key");
+
+        let fruits = ['apple','banana','mango'];
+
+        // Save To Local
+        function handleSaveLocal(){
+            localStorage.setItem("fruits", JSON.stringify(fruits) );
+        }
+
+        // Get From Local
+        function handleGetLocal(){
+            let fruitsData = JSON.parse( localStorage.getItem("fruits") );
+            console.log(fruitsData)
+        }
+       
+
+    </script>
+    
+</body>
+</html>
