@@ -20,8 +20,8 @@ function removeList(event) {
 }
 
 function editList(event) {
-  // console.log( event.target.parentElement.querySelector("#list-text").innerText );
-  let current_edit_text = event.target.previousElementSibling;
+
+  let current_edit_text = event.target.parentElement.parentElement.querySelector('#list-text');
 
   let data = prompt("Update List Here!", current_edit_text.textContent);
 

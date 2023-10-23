@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <div id="div">
+
+    </div>
+
+
+    <script>
+ 
+        let div = document.querySelector("#div");
+        let p = document.createElement("p");
+
+        p.innerText = "This is the paragraph";
+        p.style.color = "red";
+        p.style.border = 1 + "px";
+        p.className = "bg-primary";
+        p.classList.add("text-primary");
+        p.setAttribute("id","p-id");
+
+        // document.body.append(p);
+        div.append(p)
+
+        
+    </script>
+    
+</body>
+</html>
